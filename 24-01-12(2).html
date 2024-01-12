@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap button</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+    <div class="container border py-5">
+        <h2 class="mb-3">버튼스타일</h2>
+        <button type="button" class="btn">basic</button>
+        <button type="button" class="btn btn-primary">primary</button>
+        <button type="button" class="btn btn-secondary">secondary</button>
+        <button type="button" class="btn btn-success">success</button>
+        <button type="button" class="btn btn-info">info</button>
+        <button type="button" class="btn btn-warning">warning</button>
+        <button type="button" class="btn btn-danger">danger</button>
+        <button type="button" class="btn btn-dark">dark</button>
+        <button type="button" class="btn btn-light">light</button>
+        <button type="button" class="btn btn-link">link</button>
+    </div>
+
+    <div class="container mt-4 border">
+        <!-- margin, padding -->
+        <!-- m: margin / p: padding -->
+        <!-- t: top / b: bottom -->
+        <!-- s: left(start) / e: right(end) -->
+        <!-- x축: left + right(좌우) -->
+        <!-- y축: top + bottom(상하) -->
+
+        <!-- 0,1,2,3,4,5, mx-aut -->
+        <!-- 0 : 0 -->
+        <!-- 1 : 0.25rem fontsize 16px 이면 4px(0.25*16=4) -->
+        <!-- 2 : 0.5rem fontsize 16px 이면 8px (0.5*16=8) -->
+        <!-- 3 : 1rem fontsize 16px 이면 16px -->
+        <!-- 4 : 1.5rem fontsize 16px 이면 24px -->
+        <!-- 5 : 3rem fontsize 16px 이면 48px -->
+        <!-- auto : margin  자동셋팅 -->
+        <a href="#" class="btn btn-info">link-button</a>
+        <input type="button" value="input button" class="btn btn-dark">
+        <input type="submit" name="" id="" value="전송" class="btn btn-danger">
+        <input type="reset" value="리셋" class="btn btn-warning">
+        <p class="btn btn-secondary">more view</p>
+        <!-- p태그는 기본 블록구조에서 btn 명령어를 주면 인라인구조로 바뀌면서 약간 마진패딩으로 약간의 위치가 다름(다른 버튼 태그들과 다름!) -->
+    </div>
+
+    <div class="container mt-3 border py-5">
+        <h2>버튼 윤곽선</h2>
+        <button class="btn btn-outline-primary">primary</button>
+        <button class="btn btn-outline-secondary btn-lg">secondary</button>
+        <button class="btn btn-outline-success">success</button>
+        <button class="btn btn-outline-info btn-sm">info</button>
+        <button class="btn btn-outline-danger">danger</button>
+        <button class="btn btn-outline-warning">warning</button>
+        <button class="btn btn-outline-dark">dark</button>
+        <button class="btn btn-outline-light">light</button>
+    </div>
+
+    <div class="container border">
+        <button class="btn btn-danger btn-block btn-lg">full-width1</button>
+        <button class="btn btn-warning btn-block">full-width2</button>
+        <button class="btn btn-info btn-block btn-sm">full-width3</button>
+        <!-- [기억!]5버전에서는 안됨. 4.6.2버전에서는 풀위드값이 먹힘! -->
+    </div>
+
+    <div class="container border my-5 py-4">
+        <button class="btn btn-primary active">공지사항</button>
+        <button class="btn btn-primary" disabled>갤러리</button>
+        <a href="http://www.naver.com" class="btn btn-danger disabled">네이버</a>
+        <!-- [주의] disabled 가 버튼은 밖에 있어야하고. a태그는 클래스명 안에 있어야 됨 -->
+        <!-- 왜? a태그는 기본적으로 하이퍼링크 태그라서  -->
+    </div>
+
+
+</body>
+</html>
