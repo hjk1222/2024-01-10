@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열</title>
+    
+    <style type="text/css">
+        .box{
+            width: 600px;
+            height: 400px;
+            border: 10px solid salmon;
+            margin: 100px auto; 
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="box">
+        <img src="img/ani/animal01.png" alt="animal" id="ani_img">
+    </div>
+    <!-- ????? -->
+    <script lang="java">
+        var img_array = ["img/ani/animal01.png","img/ani/animal02.png", "img/ani/animal03.png", "img/ani/animal04.png", "img/ani/animal05.png",
+        "img/ani/animal06.png", "img/ani/animal07.png", "img/ani/animal08.png", "img/ani/animal09.png", "img/ani/animal10.png"];
+        
+        var img_path = document.getElementById(".ani_img");
+        console.log(img_path);
+            
+        var path = img_path.getAttribute("src");
+        console.log(img_path);
+        // setInterval(function(){},3000)
+    </script>
+
+</body>
+
+</html>
